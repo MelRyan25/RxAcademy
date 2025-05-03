@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RxAcademy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4ff, #e5ecff);
+      color: #333;
+    }
+
+    header {
+      background-color: #1f3b87;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0 0;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: #dce2ff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      padding: 30px;
+      max-width: 300px;
+      text-align: left;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1f3b87;
+    }
+
+    .card p {
+      color: #555;
+    }
+
+    .card a {
+      display: inline-block;
+      margin-top: 15px;
+      text-decoration: none;
+      background: #1f3b87;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    .card a:hover {
+      background: #152a61;
+    }
+
+    footer {
+      background: #1f3b87;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RxAcademy</h1>
+    <nav>
+      <ul>
+        <li><a href="#flashcards">Flashcards</a></li>
+        <li><a href="#summaries">Indications</a></li>
+        <li><a href="#prescribing">Prescribing Help</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="flashcards">
+    <h2 class="section-title">Pharmacology Flashcards</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Drug Mechanisms</h3>
+        <p>Review key mechanisms of action for top drug classes.</p>
+        <a href="#">View Flashcards</a>
+      </div>
+      <div class="card">
+        <h3>Side Effects</h3>
+        <p>Test yourself on side effects of common medications.</p>
+        <a href="#">Start Quiz</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="summaries">
+    <h2 class="section-title">Indication Summaries</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Antibiotics</h3>
+        <p>Quick comparisons for common infections and coverage.</p>
+        <a href="#">Read Summary</a>
+      </div>
+      <div class="card">
+        <h3>Cardiovascular Drugs</h3>
+        <p>Guidelines for managing hypertension and heart failure.</p>
+        <a href="#">Explore</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="prescribing">
+    <h2 class="section-title">Prescribing Assistance</h2>
+    <div class="card-container">
+      <div class="card">
+        <h3>Dose Calculators</h3>
+        <p>Tools for renal dosing, pediatrics, and more.</p>
+        <a href="#">Open Tool</a>
+      </div>
+      <div class="card">
+        <h3>Clinical Pearls</h3>
+        <p>Tips and alerts for safer and more effective prescribing.</p>
+        <a href="#">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 RxAcademy. All rights reserved.</p>
+  </footer>
+</body>
+</html>
